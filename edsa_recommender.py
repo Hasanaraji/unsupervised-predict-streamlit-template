@@ -63,7 +63,7 @@ def main():
 
         # User-based preferences
         st.write('### Enter Your Three Favorite Movies')
-        movie_1 = st.selectbox('Fisrt Option',title_list[14930:15200])
+        movie_1 = st.selectbox('First Option',title_list[14930:15200])
         movie_2 = st.selectbox('Second Option',title_list[25055:25255])
         movie_3 = st.selectbox('Third Option',title_list[21100:21200])
         fav_movies = [movie_1,movie_2,movie_3]
@@ -101,8 +101,10 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
-        st.title("Solution Overview")
-        st.write("Describe your winning approach on this page")
+        st.title("Hybrid Recommender System")
+        st.write("Hybrid Recommender system is the combination of ")
+        link='[EDA](http://localhost:8501/EDA)'
+        st.markdown(link,unsafe_allow_html=True)
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
